@@ -97,9 +97,13 @@ public class JobData {
         ArrayList<HashMap<String, String>> jobs = new ArrayList<>();
 
         for (HashMap<String, String> row : allJobs)
+
             for (String userStr : row.values())
+
                 if (userStr.toLowerCase().contains(value.toLowerCase())) {
-                    if (!jobs.contains(value)) {
+
+                    if (!jobs.contains(row)) {
+
                         jobs.add(row);
                         break;
                     }
