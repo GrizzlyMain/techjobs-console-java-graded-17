@@ -98,11 +98,11 @@ public class JobData {
 
         for (HashMap<String, String> row : allJobs)
 
-            for (String userStr : row.values())
+            for (String jobsStr : row.values())
 
-                if (userStr.toLowerCase().contains(value.toLowerCase())) {
+                if (jobsStr.toLowerCase().contains(value.toLowerCase())) {
 
-                    if (!jobs.contains(value)) {
+                    if (!jobs.contains(row)) {
                         jobs.add(row);
                         break;
                     }
