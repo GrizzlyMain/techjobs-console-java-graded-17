@@ -103,7 +103,6 @@ public class JobData {
                 if (userStr.toLowerCase().contains(value.toLowerCase())) {
 
                     if (!jobs.contains(value)) {
-
                         jobs.add(row);
                         break;
                     }
